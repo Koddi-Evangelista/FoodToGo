@@ -1,0 +1,9 @@
+{
+    "name": "FoodToGo",
+    "short_name": "FoodToGo",
+    "display": "standalone",
+    "start_url": ".",
+    "background_color": "#222222",
+    "theme_color": "#e13f09",
+    "orientation": "portrait"
+}

@@ -1,0 +1,18 @@
+$primary-color: #f1f1f1;
+$secondary-color: #e13f09;
+$tertiary-color: #222222;
+$quaternary-color: #e9dbc1;
+$quintary-color: #a5b29e;
+
+/**** MEDIA QUERIES ****/
+@mixin tablet {
+  @media screen and (min-width: 500px) {
+    @content;
+  }
+}
+
+@mixin pc {
+  @media screen and (min-width: 1024px) {
+    @content;
+  }
+}

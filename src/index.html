@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="foodtogo: a online restaurant finder for humans"
+    />
+    <title>FoodToGo</title>
+    <link rel="manifest" href="./manifest.json" />
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <span class="logo">
+          <img src="./assets/logo.svg" alt="logo" />
+        </span>
+        <div class="toggler" id="toggler">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="dropdown-links" id="dropdown">
+          <ul>
+            <li>
+              <a href="./pages/contact.html">contact</a>
+            </li>
+            <li>
+              <a href="./pages/login.html">log in</a>
+            </li>
+            <li>
+              <a href="./pages/signup.html">sign up</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="links">
+          <div class="language-dropdown" id="languageToggler">
+            <p>
+              <span class="lang-value" id="langValue">en</span
+              ><img id="langTogglerIcon" src="./assets/arrow-down.svg" alt="" />
+            </p>
+            <div class="hidden" id="languageHidden">
+              <label for="english">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="language"
+                  id="english"
+                  value="en"
+                />
+                en
+              </label>
+              <label for="russia">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="language"
+                  id="russia"
+                  value="rus"
+                />
+                rus
+              </label>
+              <label for="french">
+                <input
+                  class="radio"
+                  type="radio"
+                  name="language"
+                  id="french"
+                  value="fr"
+                />
+                fr
+              </label>
+            </div>
+          </div>
+          <li><a href="./pages/contact.html">contact</a></li>
+          <li><a href="./pages/login.html" class="login">log in</a></li>
+          <li><a href="./pages/signup.html" class="signup">sign up</a></li>
+        </ul>
+      </nav>
+      <main>
+        <div class="texts">
+          <h1>Food delivery for the best restaurant in your town</h1>
+          <h2>food, drinks and desserts available for delivery and pickup.</h2>
+        </div>
+        <div class="search-box">
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="search restaurants..."
+            autocomplete="off"
+          />
+          <button type="submit">find food</button>
+        </div>
+      </main>
+      <footer>
+        <div class="other-links">
+          <a href=""> terms of privacy</a>
+          <a href=""> cookies</a>
+          <a href=""> about</a>
+        </div>
+        <span class="credits"> &copy; 2020 foodtogo.com </span>
+        <div class="social-media-links">
+          <a href="#">
+            <img src="./assets/twitter.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/insta.svg" alt="" />
+          </a>
+          <a href="#">
+            <img src="./assets/fb.svg" alt="" />
+          </a>
+        </div>
+      </footer>
+    </div>
+    <script src="./js/registerServiceWorke.js"></script>
+    <script src="./js/index.js"></script>
+  </body>
+</html>
